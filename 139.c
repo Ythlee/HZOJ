@@ -1,15 +1,27 @@
 #include <stdio.h>
-
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
-    int n = scanf("%d", &n);
-    for(int i = 1; i <= n; i++) {
-        if(i < (n + 1) / 2 + 1) {
-            int m = n;
-            for(int j = 1; j < m - i; j++) {
+    int n;
+    scanf("%d", &n);
 
-            }
+    for (int i = 1; i <= n; i++) {
+
+        for (int j = 0; j < n - i; j++) {
+            printf(" ");
         }
+        for (int j = 0; j < i * 2 ; j++) {
+            printf("A");
+        }
+        printf("\n");
     }
-    return 0;
+    for (int i = n - 1; i > 0; i--) {
+
+        for (int j = 0; j < n - i; j++) {
+            printf(" ");
+        }
+        for (int j = 0; j < i * 2; j++) {
+            printf("A");
+        }
+        printf("\n");
+    }
 }
