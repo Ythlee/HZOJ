@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
     scanf("%s", str);
     len = strlen(str) - 1;
 
-    for(int i = 0; i < len; i++) {
-        movestr(str, len);
+    for(int i = 0; i <= len; i++) {
         printf("%s\n", str);
+        movestr(str, len);
     }
 
 
